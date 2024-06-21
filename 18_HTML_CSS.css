@@ -1,0 +1,18 @@
+/* Internal CSS using element name */
+body{
+    background-color: lavender;
+    text-align: center;
+}
+h3{
+    font-size: 25px;
+    color: brown;
+    font-style: italic;
+}
+p{
+    font-size: 19px;
+}
+
+/* Internal CSS using class name*/
+.blue{color: blue;}
+.red{color: red;}
+.green{color: green;}

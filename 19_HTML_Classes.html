@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+        <style>  
+            .headings{   
+                color: lightgreen;  
+                font-family: cursive;  
+                background-color: rgb(161, 119, 119); } 
+            .fruit{
+                color: white;
+                background-color: orange;
+                padding: 10px;
+            } 
+        </style>  
+    </head>
+    <body>
+        <h1 class="headings"> this is 1st heading </h1>
+        <h1 class="headings"> this is 2nd  heading </h1>
+        <h1 class="headings"> this is 3rd heading </h1>
+
+        <h2>Class Attribute with JavaScript</h2>    
+        <p>Click the button, to hide all elements with the class name "fruit", with JavaScript:</p>  
+
+        <button onclick="myFunction()"> Hide Elements</button>
+
+        <h2 class="fruit"> Mango is king of all fruits </h2>
+        
+        <h2 class="fruit"> Orange  </h2>
+        <p> Orange is source of vitamin C</p>
+
+        <script>
+           function myFunction() {
+                var x = document.getElementsByClassName("fruit");
+
+                for (var i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+            }
+        </script>
+    </body>
+</html>

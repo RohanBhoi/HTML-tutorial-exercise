@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /* example describes how to use the id attribute in CSS document */
+            #Cars {
+                padding: 40px;
+                background-color: lightblue;
+                color: black;
+                text-align: center;
+            }
+
+            #Bikes{
+                padding: 50px;
+                background-color: lightGreen;  
+                text-align: center;         
+            }
+        </style>
+
+        <!-- example describes how to use the ID attribute in JavaScript -->
+        <script>
+            function viewdate(){
+                var x = document.getElementById("doj").value;
+                document.getElementById("demo").innerHTML = x;
+            }
+        </script>
+    </head>
+
+    <body>
+        <p> Use the CSS to style an element with ID </p>
+        <h1 id="Cars"> Cars </h1>
+        <h2 id="Bikes"> Bikes </h2>
+
+        Employee name: <input type="text" name="name" id="name">
+        <br> <br>
+
+        Date of Joining: <input type="date" id="doj">
+        <br> <br>
+
+        <button onclick="viewdate()"> Submit </button>
+        <br> <br>
+        
+        <h2 id="demo"> </h2>
+    </body>
+</html>
